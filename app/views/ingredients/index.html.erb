@@ -1,0 +1,7 @@
+<h1>Ingredients</h1>
+
+<% @ingredients.each do |i| %>
+  <%= link_to i.name, i %>
+  <%= link_to 'Edit Ingredient', edit_ingredient_path(i) %>
+  <%= link_to 'Delete Ingredient', i, method: :delete %><br>
+<% end %>

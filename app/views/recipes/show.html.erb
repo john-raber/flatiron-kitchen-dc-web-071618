@@ -1,0 +1,5 @@
+<h1><%= @recipe.name %></h1>
+
+<%= form_tag recipe_path, method: :delete do %>
+  <%= submit_tag 'Delete Recipe' %>
+<% end %>
